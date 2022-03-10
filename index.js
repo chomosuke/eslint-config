@@ -45,6 +45,7 @@ module.exports = {
         "@typescript-eslint/type-annotation-spacing": "error",
         "no-plusplus": "off",
         "no-minusminus": "off",
+        "@typescript-eslint/no-explicit-any": "error",
 
         // try to ensure cohesion
         "max-lines": ["error", 500],
