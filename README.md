@@ -22,7 +22,7 @@ Changes on top of airbnb-typescript/base:
     - Most programmers are more familiar with for loop syntax compared to `forEach()`.
     - Performance shouldn't really be a consideration when using typescript.
 - Disallowed type assertion.
-    - Type assertion causes the runtime type to be different that the static type. This can cause great confusion especially when the assertion happens much earlier in the execution.
+    - Type assertion causes the runtime type to be different than the static type. This can cause great confusion especially when the assertion happens much earlier in the execution.
 - Turned off `no-use-before-define`.
     - It's preferable to have public interfaces at the top of a module because it allows the reader to see the part they are going to use first. This rule forbids that.
 - Added `@typescript-eslint/type-annotation-spacing`.
