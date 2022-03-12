@@ -1,14 +1,14 @@
-import base from "./index";
+const base = require('./index');
 
 module.exports = {
     ...base,
     rules: {
         ...base.rules,
-        "no-restricted-syntax": [
-            ...base.rules["no-restricted-syntax"].filter(
+        'no-restricted-syntax': [
+            ...base.rules['no-restricted-syntax'].filter(
                 (e) => (
-                    e.selector !== "TSTypeAssertion" &&
-                    e.selector !== "TSAsExpression"
+                    e.selector !== 'TSTypeAssertion' &&
+                    e.selector !== 'TSAsExpression'
                 ),
             ),
         ],

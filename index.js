@@ -1,5 +1,7 @@
-import airbnbBase from 'eslint-config-airbnb-base';
-import airbnbBaseTypescript from 'airbnb-typescript/base';
+const { rules: baseStyleRules } = require('eslint-config-airbnb-base/rules/style');
+const airbnbBaseTypescript = require('eslint-config-airbnb-typescript/lib/shared');
+
+console.log(baseStyleRules);
 
 module.exports = {
     extends: ['airbnb-base', 'airbnb-typescript/base'],
@@ -19,7 +21,7 @@ module.exports = {
         '@typescript-eslint/member-delimiter-style': 'error',
         eqeqeq: 'error',
         'no-restricted-syntax': [
-            ...airbnbBase.rules['no-restricted-syntax'].filter(
+            ...baseStyleRules['no-restricted-syntax'].filter(
                 (e) => e.selector !== 'ForOfStatement',
             ),
             {
@@ -39,7 +41,7 @@ module.exports = {
             'error',
             100,
             4,
-            airbnbBase.rules['max-len'][3],
+            baseStyleRules['max-len'][3],
         ],
         '@typescript-eslint/type-annotation-spacing': 'error',
         'no-plusplus': 'off',
