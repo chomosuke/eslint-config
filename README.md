@@ -35,3 +35,6 @@ Changes on top of airbnb-typescript/base:
     - This should be used with `noImplicitAny` in tsconfig
 - Added `max-lines`, `max-statements`, `max-depth` & `complexity`.
     - This is aimed to increase cohesion.
+
+## Contributing
+If you're adding new rules, please add your justification in the readme as well as in the PR.
