@@ -33,6 +33,8 @@ Changes on top of airbnb-typescript/base:
 - Added `@typescript-eslint/no-explicit-any`.
     - `any` defeats the purpose of typescript, use `unknown` instead.
     - This should be used with `noImplicitAny` in tsconfig
+- No checkLoops for `no-constant-condition`.
+    - Infinite loop are almost always intended.
 - Added `max-lines`, `max-statements`, `max-depth` & `complexity`.
     - This is aimed to increase cohesion.
 

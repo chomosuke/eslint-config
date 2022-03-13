@@ -45,6 +45,10 @@ module.exports = {
         'no-plusplus': 'off',
         'no-minusminus': 'off',
         '@typescript-eslint/no-explicit-any': 'error',
+        'no-constant-condition': [
+            'error',
+            { checkLoops: false },
+        ],
 
         // try to ensure cohesion
         'max-lines': ['error', 500],
