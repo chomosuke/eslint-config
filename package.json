@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-chomosuke",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An opinionated eslint config for typescript based on airbnb",
   "main": "index.js",
   "repository": {
