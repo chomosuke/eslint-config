@@ -2040,8 +2040,8 @@ __metadata:
   linkType: hard
 
 "eslint-config-chomosuke@file:../::locator=root-workspace-0b6124%40workspace%3A.":
-  version: 0.0.10
-  resolution: "eslint-config-chomosuke@file:../#../::hash=23bcb9&locator=root-workspace-0b6124%40workspace%3A."
+  version: 0.0.11
+  resolution: "eslint-config-chomosuke@file:../#../::hash=058a1c&locator=root-workspace-0b6124%40workspace%3A."
   dependencies:
     eslint-config-airbnb-base: ^15.0.0
     eslint-config-airbnb-typescript: ^16.1.0
@@ -2049,9 +2049,8 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.0.0
     "@typescript-eslint/parser": ^5.0.0
     eslint: ^8.10.0
-    eslint-plugin-autofix: ^1.1.0
     eslint-plugin-import: ^2.25.4
-  checksum: 7ef354eca0128336ee6102665cc1ed39e53dbfd09d5fefc1482f1f516e0f7f75827357a6d7d2caf5bac909a956a338a0d1320e1403cc0039489351c5e583d430
+  checksum: 2360eb4e645b6984d058e2bfca1ebb9139ea537ef747118f880feb6c481614074772efdabf4183e3dc68a52e179fb5f9f8d127f08cccae585b7d7653424d6e36
   languageName: node
   linkType: hard
 
@@ -2075,21 +2074,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-autofix@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "eslint-plugin-autofix@npm:1.1.0"
-  dependencies:
-    eslint-rule-composer: ^0.3.0
-    espree: ^9.0.0
-    esutils: ^2.0.2
-    lodash: ^4.17.20
-    string-similarity: ^4.0.3
-  peerDependencies:
-    eslint: ">= 5.12.1"
-  checksum: 93d33ca48f0a45d1298e1b8db9d241eb9e782f26a0d48d3e5721614c23e4edaba99215e72f890a3b1a6b885f3bfd40bd8c50f1fb863ed0a3bbf45e93c4495014
-  languageName: node
-  linkType: hard
-
 "eslint-plugin-import@npm:^2.25.4":
   version: 2.25.4
   resolution: "eslint-plugin-import@npm:2.25.4"
@@ -2110,13 +2094,6 @@ __metadata:
   peerDependencies:
     eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8
   checksum: 0af24f5c7c6ca692f42e3947127f0ae7dfe44f1e02740f7cbe988b510a9c52bab0065d7df04e2d953dcc88a4595a00cbdcf14018acf8cd75cfd47b72efcbb734
-  languageName: node
-  linkType: hard
-
-"eslint-rule-composer@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "eslint-rule-composer@npm:0.3.0"
-  checksum: c2f57cded8d1c8f82483e0ce28861214347e24fd79fd4144667974cd334d718f4ba05080aaef2399e3bbe36f7d6632865110227e6b176ed6daa2d676df9281b1
   languageName: node
   linkType: hard
 
@@ -2210,7 +2187,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"espree@npm:^9.0.0, espree@npm:^9.3.1":
+"espree@npm:^9.3.1":
   version: 9.3.1
   resolution: "espree@npm:9.3.1"
   dependencies:
@@ -3761,7 +3738,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.20, lodash@npm:^4.7.0":
+"lodash@npm:^4.7.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -4542,7 +4519,6 @@ __metadata:
     eslint: ^8.10.0
     eslint-config-chomosuke: "file:../"
     eslint-import-resolver-node: ^0.3.6
-    eslint-plugin-autofix: ^1.1.0
     eslint-plugin-import: ^2.25.4
     jest: ^27.5.1
     source-map-support: ^0.5.21
@@ -4757,13 +4733,6 @@ __metadata:
     char-regex: ^1.0.2
     strip-ansi: ^6.0.0
   checksum: ce85533ef5113fcb7e522bcf9e62cb33871aa99b3729cec5595f4447f660b0cefd542ca6df4150c97a677d58b0cb727a3fe09ac1de94071d05526c73579bf505
-  languageName: node
-  linkType: hard
-
-"string-similarity@npm:^4.0.3":
-  version: 4.0.4
-  resolution: "string-similarity@npm:4.0.4"
-  checksum: 797b41b24e1eb6b3b0ab896950b58c295a19a82933479c75f7b5279ffb63e0b456a8c8d10329c02f607ca1a50370e961e83d552aa468ff3b0fa15809abc9eff7
   languageName: node
   linkType: hard
 

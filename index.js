@@ -3,13 +3,12 @@ const airbnbBaseTypescript = require('eslint-config-airbnb-typescript/lib/shared
 
 module.exports = {
     extends: ['airbnb-base', 'airbnb-typescript/base'],
-    plugins: ['autofix'],
     rules: {
         '@typescript-eslint/indent': ['error', 4],
         'linebreak-style': 'off',
         'import/no-default-export': 'error',
         'import/prefer-default-export': 'off',
-        'autofix/sort-imports': 'error',
+        'import/order': 'error',
         '@typescript-eslint/no-unused-vars': [
             'error',
             {
