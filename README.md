@@ -11,8 +11,6 @@ Changes on top of airbnb-typescript/base:
     - This also enables auto import in some IDEs
     - People will get confused when they see the same thing with different name in different files
     - `max-lines` will take care of preventing files exporting too many things
-- Added `sort-imports`.
-    - It's good to have consistency.
 - Overridden `no-unused-vars` to allow and enforce leading `_` to indicate intentionally unused args
     - Enforce all unused args to be intentional while allowing unused args to be anywhere.
     - Unused args could make sense when accounting for unimplemented requirements

@@ -8,8 +8,6 @@ module.exports = {
         'linebreak-style': 'off',
         'import/no-default-export': 'error',
         'import/prefer-default-export': 'off',
-        'sort-imports': 'error',
-        'import/order': 'off',
         '@typescript-eslint/no-unused-vars': [
             'error',
             {
