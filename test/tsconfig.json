@@ -1,0 +1,14 @@
+{
+    "extends": "@tsconfig/node16/tsconfig.json",
+    "ts-node": {
+        "transpileOnly": true
+    },
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "noImplicitOverride": true,
+        "strictNullChecks": true,
+        "outDir": "./build",
+        "rootDir": "./src"
+    },
+    "include": ["src/**/*"]
+}
