@@ -17,6 +17,17 @@ module.exports = {
                 varsIgnorePattern: '^_',
             },
         ],
+        '@typescript-eslint/naming-convention': [
+            ...airbnbBaseTypescript.rules['@typescript-eslint/naming-convention'].map((e) => {
+                if (e.selector === 'variable') {
+                    return {
+                        ...e,
+                        leadingUnderscore: 'allow',
+                    }
+                }
+                return e;
+            }),
+        ],
         '@typescript-eslint/member-delimiter-style': 'error',
         eqeqeq: 'error',
         'no-restricted-syntax': [
