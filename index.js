@@ -14,6 +14,7 @@ module.exports = {
                 ...airbnbBaseTypescript.rules['@typescript-eslint/no-unused-vars'][1],
                 args: 'all',
                 argsIgnorePattern: '^_',
+                varsIgnorePattern: '^_',
             },
         ],
         '@typescript-eslint/member-delimiter-style': 'error',

@@ -6,14 +6,14 @@ Changes on top of airbnb-typescript/base:
     - According to [Linux kernel coding style](https://www.kernel.org/doc/html/v4.10/process/coding-style.html#indentation), if you need more than 3 levels of indentation, you’re screwed anyway, and should fix your program.
 - Turned off `linebreak-style: unix`.
     - This really does not matter in any case.
-- Turned off `import/prefer-default-export` and replaced it with `import/no-default-export`
+- Turned off `import/prefer-default-export` and replaced it with `import/no-default-export`.
     - Naming things are hard enough already, let's only do it once.
-    - This also enables auto import in some IDEs
-    - People will get confused when they see the same thing with different name in different files
-    - `max-lines` will take care of preventing files exporting too many things
-- Overridden `no-unused-vars` to allow and enforce leading `_` to indicate intentionally unused args
-    - Enforce all unused args to be intentional while allowing unused args to be anywhere.
-    - Unused args could make sense when accounting for unimplemented requirements
+    - This also enables auto import in some IDEs.
+    - People will get confused when they see the same thing with different name in different files.
+    - `max-lines` will take care of preventing files exporting too many things.
+- Overridden `no-unused-vars` to allow and enforce leading `_` to indicate intentionally unused vars
+    - Enforce all unused vars to be intentional.
+    - Unused args could make sense sometimes.
 - Added `@typescript-eslint/member-delimiter-style` to enforce semicolon style.
     - It's good to have consistency.
 - Added `eqeqeq`.
