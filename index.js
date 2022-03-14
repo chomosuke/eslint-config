@@ -17,7 +17,7 @@ module.exports = {
                 varsIgnorePattern: '^_',
             },
         ],
-        'no-underscore-dangle': false,
+        'no-underscore-dangle': 'off',
         '@typescript-eslint/naming-convention': [
             ...airbnbBaseTypescript.rules['@typescript-eslint/naming-convention'].map((e) => {
                 if (e.selector === 'variable') {
