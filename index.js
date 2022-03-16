@@ -62,12 +62,7 @@ module.exports = {
             'error',
             { checkLoops: false },
         ],
-        '@typescript-eslint/no-floating-promises': [
-            'error',
-            {
-                ignoreVoid: true,
-            },
-        ],
+        '@typescript-eslint/no-floating-promises': 'error',
         'no-void': [
             'error',
             {
