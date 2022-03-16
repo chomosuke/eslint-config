@@ -62,6 +62,19 @@ module.exports = {
             'error',
             { checkLoops: false },
         ],
+        '@typescript-eslint/no-floating-promises': [
+            'error',
+            {
+                ignoreVoid: true,
+            },
+        ],
+        'no-void': [
+            'error',
+            {
+                allowAsStatement: true,
+            },
+        ],
+        '@typescript-eslint/strict-boolean-expressions': 'error',
 
         // try to ensure cohesion
         'max-lines': ['error', 500],

@@ -1,5 +1,7 @@
 console.log('hello world');
 
-const u: unknown = null;
+const h = Math.random();
 
-console.log(u as string);
+if (h) {
+    console.log('hi');
+}

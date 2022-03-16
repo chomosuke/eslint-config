@@ -35,6 +35,10 @@ Changes on top of airbnb-typescript/base:
     - This should be used with `noImplicitAny` in tsconfig
 - No checkLoops for `no-constant-condition`.
     - Infinite loop are almost always intended.
+- Added `@typescript-eslint/no-floating-promises`.
+    - I've forgotten to await too many times to not have this rule.
+- Added `@typescript-eslint/strict-boolean-expressions`.
+    - It's always better to define explicitly what you do or do not allow. It's less error prone and more intension revealing.
 - Added `max-lines`, `max-statements`, `max-depth` & `complexity`.
     - This is aimed to increase cohesion.
 
