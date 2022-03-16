@@ -2040,8 +2040,8 @@ __metadata:
   linkType: hard
 
 "eslint-config-chomosuke@file:../::locator=root-workspace-0b6124%40workspace%3A.":
-  version: 0.1.7
-  resolution: "eslint-config-chomosuke@file:../#../::hash=7156f8&locator=root-workspace-0b6124%40workspace%3A."
+  version: 0.2.1
+  resolution: "eslint-config-chomosuke@file:../#../::hash=755a9d&locator=root-workspace-0b6124%40workspace%3A."
   dependencies:
     eslint-config-airbnb-base: ^15.0.0
     eslint-config-airbnb-typescript: ^16.1.0
@@ -2050,7 +2050,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.0.0
     eslint: ^8.10.0
     eslint-plugin-import: ^2.25.4
-  checksum: 01555d5ddebeba694b388400a69c545ec598399efc43d8eafb42daaeac078d1d895de1f5466534b70d0aa50f3de1434c7c7fb7af92e2f8c29d01463c6f1bdf1a
+  checksum: 7ba60091405d4f5707321174733b67eef0b8e23bd123c545f04336ecec838d1de52bf46e5664191a60c25435261dc21dd9ec7098f522f7d55c950e3f01edeb04
   languageName: node
   linkType: hard
 

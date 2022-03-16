@@ -74,7 +74,14 @@ module.exports = {
                 allowAsStatement: true,
             },
         ],
-        '@typescript-eslint/strict-boolean-expressions': 'error',
+        '@typescript-eslint/strict-boolean-expressions': [
+            'error',
+            {
+                allowString: false,
+                allowNumber: false,
+                allowNullableObject: false,
+            }
+        ],
 
         // try to ensure cohesion
         'max-lines': ['error', 500],
