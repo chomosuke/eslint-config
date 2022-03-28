@@ -2,7 +2,14 @@ const { rules: baseStyleRules } = require('eslint-config-airbnb-base/rules/style
 const airbnbBaseTypescript = require('eslint-config-airbnb-typescript/lib/shared');
 
 module.exports = {
-    extends: ['airbnb-base', 'airbnb-typescript/base'],
+    extends:  [
+        // order is important here, we want airbnb-typescript/base to override
+        // typescript-eslint
+        'airbnb-base',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'airbnb-typescript/base',
+    ],
     rules: {
         '@typescript-eslint/indent': ['error', 4],
         'max-len': [ // support indent
@@ -76,6 +83,8 @@ module.exports = {
                 allowNullableObject: false,
             },
         ],
+        '@typescript-eslint/no-inferrable-types': 'off',
+        '@typescript-eslint/explicit-member-accessibility': 'error',
 
         // try to ensure cohesion
         'max-lines': ['error', 300],

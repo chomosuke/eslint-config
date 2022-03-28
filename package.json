@@ -14,7 +14,7 @@
     },
     "homepage": "https://github.com/chomosuke/eslint-config#readme",
     "scripts": {
-        "test": "eslint . --ext .ts -c index.js"
+        "test": "eslint ."
     },
     "dependencies": {
         "eslint-config-airbnb-base": "^15.0.0",
