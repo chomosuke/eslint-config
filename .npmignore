@@ -1,2 +1,6 @@
-/node_modules
-/test
+*
+# ignore everything except:
+!index.js
+!tsts.js
+!package.json
+!README.md

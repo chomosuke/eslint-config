@@ -8,7 +8,7 @@
         "noImplicitOverride": true,
         "strictNullChecks": true,
         "outDir": "./build",
-        "rootDir": "./src"
+        "rootDir": "./test"
     },
-    "include": ["src/**/*"]
+    "include": ["test/**/*"]
 }
