@@ -5,9 +5,15 @@ module.exports = {
     extends: ['airbnb-base', 'airbnb-typescript/base'],
     rules: {
         '@typescript-eslint/indent': ['error', 4],
-        'linebreak-style': 'off',
+        'max-len': [ // support indent
+            // identical to what's in airbnb except tabWidth
+            'error',
+            100,
+            4,
+            baseStyleRules['max-len'][3],
+        ],
         'import/no-default-export': 'error',
-        'import/prefer-default-export': 'off',
+        'import/prefer-default-export': 'off', // support no-default-export
         '@typescript-eslint/no-unused-vars': [
             'error',
             {
@@ -17,20 +23,20 @@ module.exports = {
                 varsIgnorePattern: '^_',
             },
         ],
-        'no-underscore-dangle': 'off',
-        '@typescript-eslint/naming-convention': [
+        'no-underscore-dangle': 'off', // support no-unused-vars
+        '@typescript-eslint/naming-convention': [ // support no-unused-vars
             ...airbnbBaseTypescript.rules['@typescript-eslint/naming-convention'].map((e) => {
                 if (e.selector === 'variable') {
                     return {
                         ...e,
                         leadingUnderscore: 'allow',
-                    }
+                    };
                 }
                 return e;
             }),
         ],
         '@typescript-eslint/member-delimiter-style': 'error',
-        eqeqeq: 'error',
+        eqeqeq: ['error', 'always'],
         'no-restricted-syntax': [
             ...baseStyleRules['no-restricted-syntax'].filter(
                 (e) => e.selector !== 'ForOfStatement',
@@ -47,13 +53,6 @@ module.exports = {
             },
         ],
         '@typescript-eslint/no-use-before-define': 'off',
-        'max-len': [
-            // identical to what's in airbnb except tabWidth
-            'error',
-            100,
-            4,
-            baseStyleRules['max-len'][3],
-        ],
         '@typescript-eslint/type-annotation-spacing': 'error',
         'no-plusplus': 'off',
         'no-minusminus': 'off',
@@ -63,7 +62,7 @@ module.exports = {
             { checkLoops: false },
         ],
         '@typescript-eslint/no-floating-promises': 'error',
-        'no-void': [
+        'no-void': [ // support @typescript-eslint/no-floating-promises
             'error',
             {
                 allowAsStatement: true,
@@ -75,13 +74,13 @@ module.exports = {
                 allowString: false,
                 allowNumber: false,
                 allowNullableObject: false,
-            }
+            },
         ],
 
         // try to ensure cohesion
-        'max-lines': ['error', 500],
+        'max-lines': ['error', 300],
         'max-statements': ['error', 50],
-        'max-depth': 'error',
-        complexity: 'error',
+        'max-depth': ['error', 4],
+        complexity: ['error', 20],
     },
 };
