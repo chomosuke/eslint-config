@@ -1,6 +1,7 @@
 *
 # ignore everything except:
 !index.js
+!jest.js
 !tsts.js
 !package.json
 !README.md
