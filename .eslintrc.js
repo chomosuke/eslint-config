@@ -1,9 +1,14 @@
-const rules = require('./index');
-
 module.exports = {
-    env: {
-        node: true,
-    },
+    extends: ['./index'],
+    env: { node: true },
+    overrides: [
+        {
+            files: ['**/*.test.ts'],
+            env: { 'jest': true },
+            extends: ['./jest'],
+            plugins: ['jest'],
+        }
+    ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 'latest',
@@ -12,5 +17,4 @@ module.exports = {
     },
     plugins: ['@typescript-eslint'],
     ignorePatterns: ['**/*.js'],
-    ...rules,
 };
