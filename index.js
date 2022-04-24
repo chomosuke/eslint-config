@@ -51,12 +51,12 @@ module.exports = {
             {
                 selector: 'TSTypeAssertion',
                 message:
-                    'Type assertion are considered unsafe. Consider using a typeguard instead.',
+                    'Type assertion are considered unsafe. Consider using a typeguard or a runtime type check library instead.',
             },
             {
                 selector: 'TSAsExpression',
                 message:
-                    'Type assertion are considered unsafe. Consider using a typeguard instead.',
+                    'Type assertion are considered unsafe. Consider using a typeguard or a runtime type check library instead.',
             },
         ],
         '@typescript-eslint/no-use-before-define': 'off',
