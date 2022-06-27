@@ -6,6 +6,8 @@ This config is published to [NPM](https://www.npmjs.com/package/eslint-config-ch
 Changes on top of airbnb-typescript/base & typecript/recommended:
 - Indent with 4 spaces instead of 2.
     - According to [Linux kernel coding style](https://www.kernel.org/doc/html/v4.10/process/coding-style.html#indentation), if you need more than 3 levels of indentation, you’re screwed anyway, and should fix your program.
+- Changed `max-len` to 80 and not ignoring string & template literal.
+    - I have a small screen and I like vertical spliting.
 - Turned off `import/prefer-default-export` and replaced it with `import/no-default-export`.
     - Naming things are hard enough already, let's only do it once.
     - This also enables auto import in some IDEs.
